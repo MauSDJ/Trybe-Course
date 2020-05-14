@@ -4,5 +4,6 @@ let sum = 0;
 
 for(i = 0; i < numbers.length; i+=1) {
     sum += numbers[i];
-    console.log(sum);
 }
+
+console.log(sum);
