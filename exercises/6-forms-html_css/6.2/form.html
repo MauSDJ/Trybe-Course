@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2 class="display-4 text-muted">Formulário</h2>
+  <hr>
+  <form>
+    <div class="form-group">
+      <label for="">Nome</label>
+      <input class="form-control" 
+             type="text" 
+             name="nome" 
+             maxlength="40" 
+             required="required">
+    </div>
+    <div class="form-group">
+      <label for="">E-mail</label>
+      <input class="form-control" 
+             type="text" 
+             name="email" 
+             maxlength="50" 
+             required="required">
+    </div>
+    <div class="form-group">
+      <label for="">CPF</label>
+      <input class="form-control" 
+             type="text" 
+             name="cpf" 
+             maxlength="11" 
+             required="required">
+    </div>
+    <div class="form-group">
+      <label for="">Endereço</label>
+      <input class="form-control" 
+             type="text" 
+             name="endereco" 
+             maxlength="200" 
+             required="required">
+    </div>
+    <div class="form-group">
+      <label for="">Cidade</label>
+      <input class="form-control" type="text" 
+             name="cidade" 
+             maxlength="28" 
+             required="required">
+    </div>
+    <div class="form-group">
+      <label for="">Estado</label>
+      <select class="form-control" name="estado" 
+              required="required">
+      </select>
+    </div> 
+    <div class="form-group">
+      <input 
+             id="casa" 
+             name="residencia" 
+             value="casa" 
+             type="radio" 
+             required="required">
+      <label for="casa">Casa</label>
+      <input 
+             id="apartamento" 
+             name="residencia" 
+             value="apartamento" type="radio" 
+             required="required">
+      <label for="apartamento">Apartamento</label>
+    </div>
+    <div class="form-group">
+      <label for="">Resumo do currículo</label>
+      <textarea class="form-control" 
+                type="text" 
+                name="resumo-curriculo" 
+                maxlength="1000" 
+                required="required" 
+                rows="10" 
+                cols="50">
+      </textarea>
+    </div>
+    <div class="form-group">
+      <label for="">Cargo</label>
+      <input class="form-control" 
+             type="text" 
+             name="cargo" 
+             maxlength="40" 
+             required="required">
+    </div>
+      <label for="">Descrição do Cargo</label>
+      <input class="form-control" 
+             type="text" 
+             name="descricao-do-cargo" 
+             maxlength="500" 
+             required="required">
+    <div class="form-group">
+      <label for="">Data de início</label>
+      <input class="form-control" 
+             type="date" 
+             name="data-de-inicio" 
+             required="required">
+    </div>
+</form>
+<script src="script.js"></script>
+</body>
+</html>
