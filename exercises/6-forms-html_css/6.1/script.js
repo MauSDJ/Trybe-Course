@@ -32,7 +32,7 @@ let stateList = [
 
 function createOptions() {
     for(let i = 0; i < stateList.length; i += 1) {
-      let createElement = document.createElement("option");
+      let createElement = document.createElement('option');
       createElement.value = stateList[i][1];
       createElement.innerText = stateList[i][0];
       selectTag.appendChild(createElement);
@@ -40,17 +40,24 @@ function createOptions() {
   }
 createOptions();
 
-//Prevent Click
-function preventDef(event) {
-  event.preventDefault();
-}
+// Validate e-mail
+const regexEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+const email = document.getElementById('email-field');
+email.addEventListener("change", function() {
+  if (email.value.match(regexEmail) === null){
+    alert("Formato de e-mail inválido! Digite: exemplo@exemplo.exemplo");
+    email.value = '';
+  }
+})
 
-function addHandler() {
-  document.getElementById("checkbox").addEventListener("click", 
-    preventDef, false);
-}
+// Validate date
+const regexDate = /^([0-9]{0,2})\/([0-9]{2})\/([0-9]{4})$/;
+const date = document.getElementById('date-field');
+date.addEventListener("change", function(){
+  if (date.value.match(regexDate) === null){
+    alert("Formato de data inválido! Digite: DD/MM/AAAA");
+    date.value = '';
+  }
+});
 
-function removeHandler() {
-  document.getElementById("checkbox").removeEventListener("click",
-    preventDef, false);
-}
+// Clear All
