@@ -60,4 +60,12 @@ date.addEventListener("change", function(){
   }
 });
 
-// Clear All
+// Validate CPF
+const regexCPF = /^\d{3}\.\d{3}\.\d{3}\-\d{2}$/
+const cpf = document.getElementById('cpf-field');
+cpf.addEventListener("change", function(){
+  if (cpf.value.match(regexCPF) === null){
+    alert("Formato de CPF inválido! Inclua caracteres especiais: 111.111.111-11");
+    cpf.value = '';
+  }
+});

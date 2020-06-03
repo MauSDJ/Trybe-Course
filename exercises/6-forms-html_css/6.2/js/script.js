@@ -40,17 +40,9 @@ function createOptions() {
   }
 createOptions();
 
-//Prevent Click
-function preventDef(event) {
-  event.preventDefault();
-}
+// Validate date
+const datePicker = document.getElementById('date-field').DatePickerX;
+datePicker.init();
 
-function addHandler() {
-  document.getElementById("checkbox").addEventListener("click", 
-    preventDef, false);
-}
-
-function removeHandler() {
-  document.getElementById("checkbox").removeEventListener("click",
-    preventDef, false);
-}
+// Validate e-mail and CPF (also in HTML)
+validation.init();
