@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const appointments = ['meeting', 'study', 'class', 'project'];
+
 const task = (value) => {
   return (
     <li>{value}</li>
@@ -11,9 +13,7 @@ const task = (value) => {
 function App() {
   return (
     <ul>
-      {task('first item')}
-      {task('second item')}
-      {task('third item')}
+      {appointments.map(task)}
     </ul>
   );
 }
