@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form>
+    <h1>FORMULÁRIO</h1>
+    <fieldset id="dados-pessoais">
+      <label for="">Nome</label>
+      <input type="text" name="nome" maxlength="40" required="required"><br><br>
+      <label for="">E-mail</label>
+      <input id="email-field" type="text" name="email" maxlength="50" required="required"><br><br>
+      <label for="">CPF</label>
+      <input id="cpf-field" type="text" name="cpf" maxlength="11" required="required"><br><br>
+      <label for="">Endereço</label>
+      <input type="text" name="endereco" maxlength="200" required="required"><br><br>
+      <label for="">Cidade</label>
+      <input type="text" name="cidade" maxlength="28" required="required"><br><br>
+      <label for="">Estado</label>
+      <select name="estado" required="required">
+      </select><br><br>
+      <label for="casa">Casa</label>
+      <input id="casa" name="residencia" value="casa" type="radio" required="required">
+      <label for="apartamento">Apartamento</label>
+      <input id="apartamento" name="residencia" value="apartamento" type="radio" required="required">
+    </fieldset>
+    <fieldset id="emprego">
+      <label for="">Resumo do currículo</label>
+      <textarea type="text" name="resumo-curriculo" maxlength="1000" required="required" rows="10" cols="50"></textarea><br><br>
+      <label for="">Cargo</label>
+      <input type="text" name="cargo" maxlength="40" required="required"><br><br>
+      <label for="">Descrição do Cargo</label>
+      <input type="text" name="descricao-do-cargo" maxlength="500" required="required"><br><br>
+      <label for="">Data de início</label>
+      <input id="date-field" type="text" name="data-de-inicio" required="required"><br><br>
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpar</button>
+    </fieldset>
+</form>
+<script src="script.js"></script>
+</body>
+</html>

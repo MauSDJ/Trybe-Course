@@ -1,0 +1,49 @@
+body {
+  font-size: 1.5em;
+  margin: 10px;
+}
+h1 {
+  font-size: 1.7em;
+}
+h2 {
+
+}
+
+img {
+	max-width: 100%;
+}
+
+figure {
+	margin: 1.8em;
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    font-size: 1.8em;
+    background-color: green;
+    margin: 1.1em;
+  }
+  h1 {
+    font-size: 1.7em;
+  }
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 35%;
+  }
+
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+
+  body {
+    background-color: yellow;
+    font-size: 2.1em;
+    margin: 1em;
+    max-width: 1600px }
